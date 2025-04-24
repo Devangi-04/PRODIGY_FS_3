@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout</title>
+  <link href="output.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">🛒 Checkout</h1>
+  </header>
+
+  <main class="p-6 space-y-6">
+    <div id="cart-summary">
+      <!-- Cart summary will be injected by JavaScript -->
+    </div>
+
+    <div class="mt-6 text-right">
+      <button id="confirm-order" class="mt-2 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+        Confirm Order
+      </button>
+    </div>
+
+    <div id="order-message" class="hidden mt-6 text-center text-green-600 font-bold">
+      <p>Order Placed Successfully!</p>
+    </div>
+  </main>
+
+  <script src="js/checkout.js"></script>
+</body>
+</html>

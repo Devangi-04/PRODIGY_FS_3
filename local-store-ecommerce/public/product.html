@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Details</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header with Back and Cart links -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <!-- Back to Products Button -->
+    <a href="index.html" class="text-blue-600 flex items-center gap-2 hover:text-blue-800 transition duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      <span class="text-lg font-semibold">Back to Products</span>
+    </a>
+
+    <!-- Cart Button -->
+    <a href="cart.html" class="text-blue-600 flex items-center gap-1 hover:text-blue-800 transition duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l1-5H6l1 5zm0 0l-1 5h14l-1-5M5 21h2a2 2 0 002-2h8a2 2 0 002-2h2" />
+      </svg>
+      <span class="text-lg font-semibold">Cart</span>
+    </a>
+  </header>
+
+  <!-- Main Content (Product Details Section) -->
+  <main class="p-6 max-w-4xl mx-auto bg-white rounded-lg shadow-lg mt-6">
+    <!-- Product details will be injected here dynamically using JavaScript -->
+    <div id="product-detail"></div>
+  </main>
+
+  <!-- Linking the JavaScript file for injecting product details -->
+  <script src="js/product.js"></script>
+
+</body>
+
+</html>

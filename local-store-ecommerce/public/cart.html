@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <link href="output.css" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">🛒 Your Cart</h1>
+    <a href="index.html" class="text-blue-600 flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back
+    </a>
+  </header>
+
+  <main class="p-6">
+    <div id="cart-items" class="space-y-4"></div>
+    <div class="mt-6 text-right">
+      <p id="total-price" class="text-xl font-bold">Total: ₹0</p>
+      <button class="mt-2 bg-green-600 text-white px-6 py-2 rounded hover:bg-green-700">
+        Proceed to Checkout
+      </button>
+    </div>
+  </main>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>

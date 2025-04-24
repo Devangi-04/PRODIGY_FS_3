@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Store</title>
+  <link href="output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header Section with Store Title and Cart Link -->
+  <header class="bg-white shadow-md p-4 flex justify-between items-center">
+    <!-- Store Title -->
+    <h1 class="text-3xl font-extrabold text-blue-600 flex items-center gap-2">
+      🛍️ Local Store
+    </h1>
+
+    <!-- Cart Link -->
+    <a href="cart.html" class="text-blue-600 flex items-center gap-2 hover:text-blue-800 transition duration-300">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l1-5H6l1 5zm0 0l-1 5h14l-1-5M5 21h2a2 2 0 002-2h8a2 2 0 002-2h2" />
+      </svg>
+      <span class="font-semibold">Cart</span>
+    </a>
+  </header>
+
+  <!-- Main Content Section (Product Grid) -->
+  <main class="p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="product-list">
+    <!-- JS Injects products here -->
+  </main>
+
+  <!-- Linking JavaScript for Dynamic Product Injection -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
